@@ -1,10 +1,10 @@
 # 🌻 Carrima Hewitt 
-Web Developer, Human 
+Technical Writer, Web Developer, Human 
 ## My Current Projects
-- The Cute Suite
-- To Do List (name pending)
+- Cute Timer (2.0)
+- Autodesk Homestyler Quick Guide
 - Portfolio
 ## My Favorite Projects
 - Easy Recipes (Website)
 - The Bruised Orange Jazz Bar and Restaurant (Website)
-- M&D Cleaning (Website)
+- Switching from Windows To Mac - An Aesthetic Guide (User Guide)
