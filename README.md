@@ -4,6 +4,7 @@ Technical Writer, Web Developer, Human
 - Cute Timer (2.0)
 - Autodesk Homestyler Quick Guide
 - Portfolio
+- Libre Office Setup Guide
 ## My Favorite Projects
 - Easy Recipes (Website)
 - The Bruised Orange Jazz Bar and Restaurant (Website)
