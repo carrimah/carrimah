@@ -3,18 +3,14 @@
 }
 body{
     height: 100vh;
-    justify-content: space-between; align-items: center;
-    background-color: rgb(254, 249, 254);
+    padding: 1rem;
 }
 body > *{
     width: 100%;
 }
 header{
-    height: min(10vh, 4rem);
-    background-color: rgb(205, 159, 205);
-    display: flex; align-items: center;
-    padding-left: 1rem;
-    color: white;
+    height: 100px; width: 100%;
+    background-color: blue;
 }
 main{
     text-align: center;
@@ -23,4 +19,8 @@ footer{
     height: min(6vh, 4rem);
     background-color: rgb(205, 159, 205);
     display: flex; align-items: center; justify-content: center;
+}
+img{
+    width: 100%;
+    height: auto;
 }
