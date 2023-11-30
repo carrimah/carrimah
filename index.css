@@ -3,24 +3,26 @@
 }
 body{
     height: 100vh;
+    overflow: hidden;
     padding: 1rem;
+    background-color: #0b0c09;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
 body > *{
     width: 100%;
 }
 header{
-    height: 100px; width: 100%;
-    background-color: blue;
+    width: 100%; height: 5rem;
+    display: flex;
+}
+.header-frame{
+    margin-left: 5rem;
+    width: 45%;
 }
 main{
-    text-align: center;
-}
-footer{
-    height: min(6vh, 4rem);
-    background-color: rgb(205, 159, 205);
-    display: flex; align-items: center; justify-content: center;
-}
-img{
+    margin-top: -5rem;
     width: 100%;
-    height: auto;
+}
+.frame{
+    width: 100%;
 }
