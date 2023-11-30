@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0; margin: 0; box-sizing: border-box;
+    font-family: 'Tomorrow', sans-serif;
 }
 body{
     height: 100vh;
@@ -13,10 +15,34 @@ body > *{
     width: 100%;
 }
 header{
-    width: 50%; height: 3rem;
-    border: 2px solid red;
+    height: 3rem;
 }
+nav{
+    width: 50%; height: 100%;
+    border: 2px solid red;
+    padding-left: 0.5rem;
+}
+nav:hover{
+    background-color: red;
+    color: #0b0c09;
+}
+nav h1{
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex; align-items: center;
+}
+
 main{
     flex: 2;
     border: 2px solid green;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.5s;
+}
+main:hover{
+    background-color: green;
+    color: #0b0c09;
+}
+main h1{
+    font-weight: 500;
+    font-size: 5rem;
 }
