@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles | Carrima Hewitt</title>
     <link rel="stylesheet" href="../display.css">
+    <style>
+        #title{
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+        h2{
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .article{
+            width: 100%; height: calc(100vh - 3rem - 4rem - 6rem);
+            border: 1px solid green;
+            margin-bottom: 1rem;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }.article-title{
+            font-size: 3rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +36,31 @@
         </nav>
     </header>
     <main>
-        <h1>Articles</h1>
+        <h1 id="title">Articles</h1>
+        <div class="articles-curr">
+            <h2>Current Articles</h2>
+            <div class="article">
+                <h3 class="article-title">Intro To Autodesk Floorplanner</h3>
+                <p class="article-description">A quick guide.</p>
+            </div>
+        </div>
+        <div class="articles-past">
+            <h2>Past Articles</h2>
+            <div class="article">
+                <h3 class="article-title">Windows To Mac: An Aesthetic Guide</h3>
+                <p class="article-description">A guide on customizing the Mac UI</p>
+            </div>
+            <div class="article">
+                <h3 class="article-title">Spotify Score Documentation</h3>
+                <p class="article-description">A user guide for a song review site.</p>
+            </div>
+        </div>
+        <div class="articles-future">
+            <h2>Future Articles</h2>
+            <div class="article">
+                <h3 class="article-title">Help Desk 101</h3>
+                <p class="article-description">A beginner's guide to helpdesk</p>
+            </div>
     </main>
 </body>
 </html>
