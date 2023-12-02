@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Carrima Hewitt</title>
     <link rel="stylesheet" href="../display.css">
+    <style>
+        #title{
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+        h2{
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .project{
+            width: 100%; height: calc(100vh - 3rem - 4rem - 6rem);
+            border: 1px solid green;
+            margin-bottom: 1rem;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }.project-title{
+            font-size: 3rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +36,32 @@
         </nav>
     </header>
     <main>
-        <h1>Projects</h1>
+        <h1 id="title">Projects</h1>
+        <div class="projects-curr">
+            <h2>Current Projects</h2>
+            <div class="project">
+                <h3 class="project-title">Cute Timer</h3>
+                <p class="project-description">A customizable, pastel timer.</p>
+            </div>
+        </div>
+        <div class="projects-past">
+            <h2>Past Projects</h2>
+            <div class="project">
+                <h3 class="project-title">The Bruised Orange</h3>
+                <p class="project-description">A jazz restaurant and bar website</p>
+            </div>
+            <div class="project">
+                <h3 class="project-title">Easy Recipes</h3>
+                <p class="project-description">A recipe website</p>
+            </div>
+        </div>
+        <div class="projects-future">
+            <h2>Future Projects</h2>
+            <div class="project">
+                <h3 class="project-title">Cute Diary</h3>
+                <p class="project-description">A visual journaling web app</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
