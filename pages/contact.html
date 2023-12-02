@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Carrima Hewitt</title>
     <link rel="stylesheet" href="../display.css">
+    <style>
+        #title{
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+        form{
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .input-row{
+            width: 50vw;
+            display: flex; flex-direction: column; gap: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        .input-row input{
+            height: 2rem;
+            padding-left: 2px;
+        }
+        .input-row textarea{
+            padding: 4px;
+        }
+        .input-row input:focus, .input-row textarea:focus{
+            outline: none;
+            border: 2px solid green;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+        }
+        .input-row input:focus:invalid{
+            outline: none;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        form button{
+            width: 50vw; height: 4rem;
+            background-color: transparent;
+            border: 2px solid green;
+            color: white;
+            font-size: 1.5rem;
+        }
+        form button:hover{
+            background-color: green;
+            color: #0b0c09;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +64,22 @@
         </nav>
     </header>
     <main>
-        <h1>Contact</h1>
+        <h1 id="title">Contact</h1>
+        <form action="">
+            <div class="input-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="input-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="input-row">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button>CONTACT</button>
+        </form>
     </main>
 </body>
 </html>
