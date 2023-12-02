@@ -18,7 +18,10 @@ header{
     display: flex; justify-content: space-between;
 }
 main{
+    height: calc(100vh - 3rem - 4rem);
+    overflow: hidden;
     display: flex; flex-direction: column; gap: 1rem;
+    position: relative;
 }
 
 #brand{
@@ -54,13 +57,16 @@ nav a:hover{
 }
 
 main section{
-    height: calc(100vh - 3rem - 4rem);
+    min-height: calc(100vh - 3rem - 4rem); width: 100%;
+    position: absolute;
+    background-color: #0b0c09;
+    transition: all 1s, background-color 0.3s;
 }
 
 #welcome{
     border: 2px solid green;
     display: flex; align-items: center; justify-content: center;
-    transition: all 0.3s;
+    z-index: 2;
 }
 #welcome:hover{
     background-color: green;
@@ -72,7 +78,8 @@ main section{
 }
 
 #about{
-    border: 2px solid salmon;
+    height: calc(100vh - 3rem - 4rem);
+    border: 2px solid green;
     padding: 1rem 2rem;
 }
 #about h1{
@@ -82,7 +89,7 @@ main section{
     font-size: 3rem;
 }
 #about-content{
-    height: calc(100% - 5rem); width: 100%;
+    height: calc(100% - 4rem - 1rem);
     display: flex;
 }
 
