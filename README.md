@@ -1,7 +1,7 @@
 # 🌻 Carrima Hewitt 
 Technical Writer, Web Developer, Human 
 ## My Current Projects
-- Cute Timer (2.0)
+- Focus Timer
 - Autodesk Homestyler Quick Guide
 - Portfolio
 - Libre Office Setup Guide
