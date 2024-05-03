@@ -14,4 +14,3 @@ Technical Writer, Web Developer, Human
 
 ### Check out my other GitHubs
 1. [UF GitHub](https://github.com/chewitt1)
-2. 
