@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Carrima Hewitt</title>
+    <link rel="stylesheet" href="../display.css">
+    <style>
+        #title{
+            text-transform: uppercase;
+            margin: 1rem 0;
+            text-align: center;
+            font-size: 3rem;
+            border-bottom: 1px double slateblue;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        h3{
+            font-size: 1.5rem;
+            color: green;
+        }
+        h4{
+            color: slateblue;
+            font-size: 1.10rem;
+            padding-bottom: 1rem;
+        }
+        h3 > span, h4 > span{
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        p#contact{
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 1px double slateblue;
+        }
+        main li{
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        main ul{
+            margin-left: 2rem;
+        }   
+        .sub-title{
+            padding-top: 1rem;
+            border-top: 1px solid slateblue;
+        }
+        #skill-list li:nth-child(odd)>b{
+            color: green;
+        }
+        #skill-list li:nth-child(even)>b{
+            color: slateblue;
+        }
+
+        @media screen and (max-width: 800px){
+            #title{
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="brand"><h1><a href="../index.html">Carrima Hewitt</a></h1></div>
+        <nav>
+            <ul>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="title">Carrima Hewitt</h1>
+        <p id="contact">carrimahewitt3@gmail.com • (123) 456-789 • Miami, FL</p>
+        <div class="resume-section">
+            <h2>Professional Experience</h2>
+            <h3>Florida International University <span>— Miami, FL</span></h3>
+            <h4>Associate Applications Business Analyst <span>| Aug 2024 – Present</span></h4>
+            <ul>
+                <li>Support student financial systems by monitoring transaction accuracy, ensuring data integrity, and assisting with accounting period close and report generation.</li>
+                <li>Analyze business processes and system workflows to support documentation, special projects, and continuous process improvement initiatives.</li>
+            </ul>
+            <br>
+            <h3>Miami Dade College <span>— Miami, FL</span></h3>
+            <h4>Help Desk Analyst <span>| Aug 2023 – Aug 2024</span></h4>
+            <ul>
+                <li>Provided Tier 1/Tier 2 technical support across a multi-campus environment, resolving issues for 1,000+ end-users and increasing first-contact resolution rates.</li>
+                <li>Logged, analyzed, and trended service tickets using Kaseya to identify recurring issues and recommend preventative solutions.</li>
+            </ul>
+            <br>
+            <h3>M&D Cleaning <span>— Remote</span></h3>
+            <h4>Administrative Assistant <span>| Aug 2021 – Jun 2023</span></h4>
+            <ul>
+                <li>Managed bookkeeping, invoicing, and customer records using QuickBooks, improving invoice resolution and data accuracy.</li>
+                <li>Designed and maintained organized digital record-keeping systems, reducing data retrieval time and supporting business reporting needs.</li>
+            </ul>
+        </div>
+        
+        <div class="resume-section">
+            <h2 class="sub-title">Education</h2>
+            <h3>Florida International University  <span>— Miami, FL</span></h3>
+            <h4>M.S. Information Systems <span>| Dec 2025</span></h4>
+            <ul>
+                <li>GPA: <b>4.0 / 4.0</b>; concentration in data analytics, business intelligence, and systems analysis</li>
+                <li>Applied analytical and technical methods to evaluate business processes and data-driven decisions</li>
+            </ul>
+            <br>
+            <h3>University of Florida <span>— Gainesville, FL</span></h3>
+            <h4>B.S. Computer Science <span>| May 2023</span></h4>
+            <ul style="padding-bottom: 1rem;">
+                <li>Graduated <b>cum laude</b>; minor in Anthropology</li>
+                <li>Built a strong foundation in programming, data structures, algorithms, and analytical problem-solving; IRHA Secretary, AFROTC</li>
+            </ul>
+        </div>
+        <div class="resume-section">
+            <h2 class="sub-title">Technical Skills</h2>
+            <ul id="skill-list">
+                <li><b>Data & Analysis:</b> Excel, SQL, Power BI, Tableau, Data Modeling, Reporting & Dashboards</li>
+                <li><b>Programming & Systems: </b>Python, C++, JavaScript, HTML/CSS, Oracle DB, PeopleSoft (PantherSoft)</li>
+                <li><b>Tools & Methods:</b> Kaseya, Salesforce, Agile, Process Documentation, Technical Writing</li>
+                <li><b>Operating Systems:</b> Windows, Linux, macOS</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
