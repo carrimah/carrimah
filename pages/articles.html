@@ -30,6 +30,30 @@
         .article-title{
             font-size: 2rem;
         }
+        @media screen and (max-width: 800px){
+            header{
+                position: fixed;
+                background-color: #0b0c09;
+            }
+            nav{
+                margin-right: 4rem;
+            }
+            main{
+                padding-top: 5rem;
+            }
+            .article{
+                flex-direction: column;
+            }
+            h2{
+                border-top: 4px double slateblue;
+                padding-top: 1rem;
+                font-size: 4rem;
+            }
+            .article-description, .article-img{
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -37,6 +61,7 @@
         <div id="brand"><h1><a href="../index.html">Carrima Hewitt</a></h1></div>
         <nav>
             <ul>
+                <li><a href="./resume.html">Resume</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./articles.html">Articles</a></li>
                 <li><a href="./contact.html">Contact</a></li>
