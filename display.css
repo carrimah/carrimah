@@ -53,9 +53,27 @@ nav a{
     color: white;
 }
 nav a:hover{
-    cursor: default;
+    cursor: pointer;
     color: red;
 }
 .flex-col{
     display: flex; flex-direction: column;
 }
+
+ @media screen and (max-width: 800px){
+    #brand{
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    nav{
+        position: relative;
+        z-index: 4;
+        background-color: #0b0c09;
+        height: fit-content;
+        border: 2px solid green;
+        padding: 1rem;
+    }
+    nav > ul{
+        flex-direction: column;
+    }
+ }

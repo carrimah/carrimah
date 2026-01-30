@@ -26,6 +26,7 @@
             z-index: 2;
         }
         #welcome:hover{
+            cursor: pointer;
             background-color: green;
             color: #0b0c09;
         }
@@ -123,6 +124,66 @@
             border: 1px solid slateblue;
             display: flex; align-items: center; justify-content: center;
         }
+
+        @media screen and (max-width: 800px){
+            nav{ z-index: 4;}
+            main{
+                overflow-y: scroll;
+            }
+            #welcome{
+                height: 100%;
+            }
+            #about{
+                height: fit-content;
+            }
+            #about-content{
+                flex-direction: column;
+            }
+            #about-profile{
+                order: 1;
+                width: 100%;
+                border-right: none;
+                padding: 1rem 0 4rem;
+                border-bottom: 1px solid slateblue;
+            }
+            #about-img{
+                height: 45vh; width: 70vw;
+            }
+            #about .text{
+                width: 100%;
+            }
+            #about-tools{
+                order: 2;
+                width: 100%;
+                padding: 2rem 0 4rem;
+                border-right: none;
+                border-bottom: 1px solid slateblue;
+            }
+            #about-tools h2{
+                width: 100%;
+                border-bottom: 1px solid slateblue;
+                padding-bottom: 1rem;
+                text-align: center;
+            }
+            #about-links{
+                order: 3;
+                width: 100%;
+                padding: 2rem 0;
+            }
+            #about-links h2{
+                width: 100%;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            #about-links a:hover{
+                color: red;
+            }
+            #about-links div{
+                width: 100%
+            }
+        }
+
+        /*IDEA: media query where for the About section the content ROTATES (like a rapid flip of the dividers from horizontal to vertical*/
     </style>
 </head>
 <body class="flex-col">
@@ -130,6 +191,7 @@
         <div id="brand"><h1><a href="./index.html">Carrima Hewitt</a></h1></div>
         <nav>
             <ul>
+                <li><a href="./pages/resume.html">Resume</a></li>
                 <li><a href="./pages/projects.html">Projects</a></li>
                 <li><a href="./pages/articles.html">Articles</a></li>
                 <li><a href="./pages/contact.html">Contact</a></li>
@@ -145,6 +207,15 @@
             <div id="about-content">
                 <div id="about-tools">
                     <h2>Toolbox</h2>
+                    <p>Data Analysis</p>
+                    <ul>
+                        <li>Pyton</li>
+                        <li>SQL</li>
+                        <li>Tableau</li>
+                        <li>PowerBI</li>
+                        <li>Excel</li>
+                        <li>Machine Learning</li>
+                    </ul>
                     <p>Web Development</p>
                     <ul>
                         <li>HTML</li>
@@ -153,14 +224,13 @@
                         <li>Node</li>
                         <li>React</li>
                         <li>Bootstrap</li>
-                        <li>jQuery</li>
                     </ul>
                     <p>Technical Writing</p>
                     <ul>
                         <li>Markdown</li>
                         <li>Adobe</li>
                         <li>Google Docs</li>
-                        <li>Microsoft Office</li>
+                        <li>MS Office</li>
                         <li>GitHub</li>
                         <li>Drive</li>
                     </ul>
@@ -192,6 +262,21 @@
     </main>
     <script defer>
         let welcome = document.querySelector("#welcome");
+        let clickMeCount = 0;
+        welcome.firstElementChild.addEventListener("mouseover", ()=>{
+            clickMe = document.createElement("p");
+            clickMe.textContent = "Click Me~";
+            welcome.appendChild(clickMe);
+            clickMeCount += 1;
+        })
+        welcome.firstElementChild.addEventListener("mouseleave", ()=>{
+            if(clickMeCount == 3){
+                // Remove all but first child ("Welcome" h1 element)
+                while (welcome.lastElementChild !== welcome.firstElementChild) {
+                    welcome.removeChild(welcome.lastElementChild);
+                }
+            }
+        })
         welcome.addEventListener("click", ()=>{
             welcome.style.marginLeft = "100vw";
         })
